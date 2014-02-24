@@ -31,6 +31,10 @@ public class TestServlet extends HttpServlet {
         urlParameter = request.getParameter("parametru");
         pw.println("<h1>" + urlParameter + "</h1>");
         pw.println("<h1>" + type + "</h1>");
+        
+//        SessionCookieConfig config = request.getServletContext().getSessionCookieConfig();
+//        config.setHttpOnly(true);
+        
     }
 
 
