@@ -6,9 +6,7 @@
 package controller;
 
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
-import java.io.StringWriter;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -20,7 +18,7 @@ import javax.servlet.ServletResponse;
  *
  * @author aignat
  */
-public class doFilter implements Filter {
+public class TestFilter implements Filter {
 
     private static final boolean debug = true;
     private FilterConfig filterConfig = null;
