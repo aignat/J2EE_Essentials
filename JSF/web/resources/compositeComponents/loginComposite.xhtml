@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+    </cc:interface>
+
+    <!-- IMPLEMENTATION  -->
+    <cc:implementation>
+        <h:form>
+            <h:panelGrid columns="3">
+                <h:outputText value="Name:" />
+                <h:inputText value="#{user.name}" id="name"/>
+                <h:message for="name" style="color: red" />
+                <h:outputText value="Password:" />
+                <h:inputText value="#{user.password}" id="password" />
+                <h:message for="password" style="color: red" />
+            </h:panelGrid>
+            <h:commandButton actionListener="#{user.register()}"
+                             id="loginButton" action="status" value="submit" />
+        </h:form>            
+    </cc:implementation>
+
+</html>
